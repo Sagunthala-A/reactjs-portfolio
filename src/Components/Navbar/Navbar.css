@@ -1,0 +1,35 @@
+.navbar{
+    display:flex;
+    align-items: center;
+    justify-content: space-evenly;
+    color:white;
+    background-color:rgb(0, 0, 0);
+    top:0;
+    position:sticky;
+    z-index: 2000;
+}
+
+.navbar__left{
+    flex: 0.3;
+}
+
+.navbar__right{
+    display: flex;
+    flex: 0.7;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.navbar__left > h1 {
+    text-align: center;
+    cursor:pointer;
+}
+
+.navbar__left > h1 > span{
+    color:tomato ;
+}
+
+.navbar__right > a > h4 {
+    cursor: pointer;
+}
+
