@@ -1,0 +1,97 @@
+.projectBox{
+    color:white;
+    display: flex;
+    flex-wrap: wrap;
+    width: 60vw;
+    margin-top: 50px;
+    background-color: red;
+}
+
+.projectBox__project{
+    color:white;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    background-color: blue;
+    padding:5px;
+    margin:4px;
+}
+
+.projectBox > a{
+    text-decoration: none;
+    color: white;
+}
+
+.projectBox__project:hover{
+    transform: scale(1.07);
+}
+
+.projectBox__project > a >img{
+    width: 300px;
+    height: 200px;
+    margin:10px;
+}
+
+.projectBox__content{
+    width: 300px;
+    height: 200px;
+    margin:10px;
+    color:white;
+} 
+
+.projectBox__content > h4{
+    padding-bottom: 5px;
+}
+
+.projectBox__content > p{
+    font-size:15px;
+}
+
+/* 
+
+.projectBox__project > img {
+    width: 350px;
+    height: 179px;
+  }
+  
+  .projectBox__project {
+    transition: transform 100ms ease-in;
+    margin: 15px;
+  }
+  
+  .projectBox__project:hover {
+    color: white;
+    background-color: #f64c08;
+    width: 350px;
+    height: 178px;
+    transform: scale(1.05);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  .projectBox__project{
+    color:white;
+    display: flex;
+    flex-wrap: wrap;
+    width: 60vw;
+    margin-top: 50px;
+    max-width: 30%;
+    background-color: blue;
+}
+
+.projectBox > a{
+    text-decoration: none;
+    color: white;
+    width:400px;
+}
+
+.projectBox{
+    color:white;
+    display: flex;
+    flex-wrap: wrap;
+    width: 60vw;
+    margin-top: 50px;
+    background-color: red;
+} */

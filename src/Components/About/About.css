@@ -1,4 +1,74 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital@1&family=Great+Vibes&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital@1&family=Great+Vibes&family=Montserrat&display=swap');
+
 .about{
-    position: relative;
-    top:1500px;
+  color:white;
+  position: relative;
+}
+
+.about__container{
+  position: absolute;
+  top: 250px;
+  right: 150px;
+  background-color: transparent !important;
+}
+
+.about__container > h1{
+  font-family: 'Great Vibes', cursive;
+  font-size: 70px;
+  letter-spacing: 3px;
+}
+
+.about__container > p{
+  font-family: 'Crimson Text', serif;
+  font-size: 25px;
+  text-align: left;
+  padding-left:23px;
+  padding-top:20px;
+}
+
+.about__buttons > a > button{
+  outline:none;
+  border:none;
+  border-radius:5px;
+  padding:5px;
+  margin-top:30px;
+  margin-left: 10px;
+  text-align: left;
+}
+
+.about__downloadResumeBtn{
+  color:white;
+  background-color: tomato;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  padding:10px 25px !important;
+  font-weight: 300;
+  cursor: pointer;
+  margin-right: 20px;
+  margin-left: 23px !important;
+}
+
+.about__downloadResumeBtn:hover{
+  color: #f64c08;
+  background-color: white;
+  font-weight: 600;
+}
+
+.about__myWorkBtn{
+  color:white;
+  background-color:transparent;
+  font-family: 'Montserrat', sans-serif;
+  border:1px solid white !important;
+  font-size: 14px;
+  padding:9px 45px !important;
+  font-weight: 300;
+  cursor: pointer;
+}
+
+.about__myWorkBtn:hover{
+  color: black;
+  background-color: white;
+  font-weight: 600;
 }

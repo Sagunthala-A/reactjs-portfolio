@@ -39,7 +39,6 @@ const Navbar = () => {
             duration={500}
             ><h4>Contact</h4>
           </Link>
-
         </div>
     </nav>
   )
