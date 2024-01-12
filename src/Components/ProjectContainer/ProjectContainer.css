@@ -4,28 +4,22 @@
     align-items: center;
     justify-content: center;
     margin: 200px 0;
-    color:white
+    color:white;
 }
 
-.projectContainer__content{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.projectContainer__content > h1{
+.projectContainer > h1 {
     padding-bottom: 15px;
 }
-
-.projectContainer__content > p{
+  
+.projectContainer > p {
     padding-bottom: 20px;
 }
 
-.projectContainer__project{
+.projectContainer__project {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    width: 60vw;
+    margin-top: 50px;
     justify-content: center;
-    width:60vw;
-}
+  }
