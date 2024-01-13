@@ -1,0 +1,43 @@
+.contact{
+    margin:200px auto 150px auto;
+    color:white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+    width:30vw;
+    border:1.4px dotted white;
+    padding: 30px 0;
+    border-radius: 3px;
+}
+
+.contact > h1 {
+    color: white;
+    border-bottom:1px solid tomato;
+    padding-bottom: 10px;
+}
+
+.contact__icons{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    padding:50px 10px 20px 10px;
+}
+
+
+.contact__icons > a > .MuiSvgIcon-root {
+    width: 100px;
+    height: 66px;
+    transition: transform 200ms ease-in;
+}
+
+.contact__icons > a > .MuiSvgIcon-root:hover{
+    transform: scale(1.1);
+    color: tomato;
+}
+
+
+.contact:hover{
+    transform: scale(1.02);
+    border-radius: 10px;
+}

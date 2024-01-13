@@ -1,0 +1,43 @@
+.footerSection{
+    color:white;
+    text-align: center;
+    margin:100px;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: sizeChange 2000ms ease-in infinite;
+    transition: transform 2s ease-in;
+}
+
+.footerSection > h4 {
+    letter-spacing: 1px;
+    padding:10px;
+    margin-right: 8px;
+}
+
+.heartIcon{
+    animation: sizeChange 450ms linear infinite,colorChange 2s linear infinite;
+} 
+
+.footerSection >   h4 {
+    text-align: center;
+    animation: colorChange 2s linear infinite;
+}
+
+@keyframes sizeChange {
+    0% {
+        transform:scale(1.1)   
+    }
+}
+
+@keyframes colorChange {
+    0% {
+        color:tomato;
+    }
+    80% {
+        color: white;  
+    }
+}
+
+

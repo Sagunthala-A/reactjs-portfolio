@@ -46,4 +46,23 @@
     cursor:pointer;
 }
 
+.navbar__right > a:last-child{
+    background-color: tomato ;
+    border-radius: 2px;
+    padding:3px 10px;
+    transition: none;
+}
 
+.navbar__right > a:last-child:hover {
+    padding: 5px 20px !important;
+    font-size: 16px;
+    transform: none;
+}
+
+.navbar__right > a:last-child {
+    background-color: #f64c08;
+    color: white;
+    padding: 5px 20px !important;
+    border-radius: 4px;
+    letter-spacing: 1px;
+}

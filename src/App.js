@@ -4,7 +4,12 @@ import './App.css';
 import AboutContainer from './Components/AboutContainer/AboutContainer';
 import Skills from './Components/Skills/Skills';
 import ProjectContiner from './Components/ProjectContainer/ProjectContiner';
+import Contact from './Components/Contact/Contact';
+import Footer from './Components/Footer/Footer';
+// import HireMe from './Components/HireMe/HireMe';
+// import { Routes ,Route } from 'react-router';
 
+ 
 const App = () => {
   return (
     <div>
@@ -12,7 +17,11 @@ const App = () => {
         <AboutContainer/>
         <Skills/>
         <ProjectContiner/>
+        <Contact/>
+        <Footer/>
     </div>
+
+
   )
 }
 
