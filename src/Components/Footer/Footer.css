@@ -6,14 +6,14 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    animation: sizeChange 2000ms ease-in infinite;
+    /* name duration timing-function delay iteration-count direction  NDT DID*/
+    animation: sizeChange 2000ms ease-in infinite alternate;
     transition: transform 2s ease-in;
 }
 
 .footerSection > h4 {
     letter-spacing: 1px;
     padding:10px;
-    margin-right: 8px;
 }
 
 .heartIcon{
