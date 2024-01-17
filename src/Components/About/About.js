@@ -7,7 +7,7 @@ const About = () => {
     <div className='about'>
       <div className='about__container'>
         <h1>Ms.Sagunthala</h1>
-        <p>I'm an enthusiastic web developer</p>
+        <p>An enthusiastic web developer waiting for opportunities to show the skill</p>
         <div className='about__buttons'>
           <a>
             <button className='about__downloadResumeBtn'>Download Resume</button>
