@@ -34,6 +34,7 @@ const Navbar = () => {
             ><h4>Contact</h4>
           </Link>
           <Link 
+            to='contact'
             smooth={true} 
             duration={500}
             ><h4>Hire Me</h4>
