@@ -6,13 +6,15 @@ import skill_img from '../../assets/jojo/skill.jpg'
 
 const Skills = () => {
   return (
-    <div className='skill__wrapper'>
-        <Element className='skillContainer' name='skills'>
+    <>
+    <h2 className='skill__title'>Skillset</h2>
+    <Element className='skillContainer' name='skills'>
+            
         <div className='skillContainer__image'>
             <img src={skill_img} alt='skills image'/>
         </div>
         <div className='skillContainer__skills'>
-            <h2>Skillset</h2>
+            {/* <h2>Skillset</h2> */}
 
             <div className='skillContainer__skillSet'>
                 <h5>Reactjs</h5>
@@ -76,7 +78,7 @@ const Skills = () => {
 
         </div>
     </Element>
-    </div>
+    </>
   )
 }
 
