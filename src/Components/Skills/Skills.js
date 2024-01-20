@@ -69,7 +69,7 @@ const Skills = () => {
                     <LinearProgress 
                         className='slider6'
                         variant="determinate"
-                        value={10}/>
+                        value={50}/>
                 </div>
             </div>
 
