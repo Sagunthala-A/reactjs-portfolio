@@ -45,17 +45,15 @@
     padding-top: 30px;
 }
   
-.skillContainer__slider1 > span > .css-5xe99f-MuiLinearProgress-bar1{
+/* .skillContainer__slider1 > span > .css-5xe99f-MuiLinearProgress-bar1{
     background-color: rgb(225, 63, 9) ;
 }
 
 .skillContainer__slider2 > span > .css-5xe99f-MuiLinearProgress-bar1{
     background-color: rgb(207, 116, 18) ;
-}
+} */
 
-
-
-.skillContainer__slider3 > span > .css-5xe99f-MuiLinearProgress-bar1{
+/* .skillContainer__slider3 > span > .css-5xe99f-MuiLinearProgress-bar1{
     background-color: rgb(228, 228, 23) ;
 }
 
@@ -65,12 +63,12 @@
 
 .skillContainer__slider5 > span > .css-5xe99f-MuiLinearProgress-bar1{
     background-color: rgb(13, 220, 23) ;
-}
+} */
 
-.skillContainer__slider6 > span > .css-5xe99f-MuiLinearProgress-bar1{
-    /* background-color: rgb(13, 110, 220) ; */
-}
+/* .skillContainer__slider6 > span > .css-5xe99f-MuiLinearProgress-bar1{
+     background-color: rgb(13, 110, 220) ; 
+} */
 
 span > .css-5xe99f-MuiLinearProgress-bar1{
-    background-color: blueviolet !important;
+    background-color: blueviolet ;
 }

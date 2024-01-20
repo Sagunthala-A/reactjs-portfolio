@@ -51,7 +51,14 @@ const Skills = () => {
             <div className='skillContainer__skillSet'>
                 <h5>JAVA</h5>
                 <div className='skillContainer__slider6'>
-                    <LinearProgress variant='determinate' value={70}/>
+                    <LinearProgress sx={{
+                  backgroundColor: 'white',
+                  '& .MuiLinearProgress-bar': {
+                    backgroundColor: 'green'
+                  }
+                }}
+                variant="determinate"
+                value={10}/>
                 </div>
             </div>
 
