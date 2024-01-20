@@ -66,3 +66,22 @@
     border-radius: 4px;
     letter-spacing: 1px;
 }
+
+
+
+/* media queries  */
+
+@media screen and (max-width:768px){
+    .navbar__left{
+    flex: 0.23;
+}
+
+.navbar__right{
+    flex: 0.77;
+}
+.navbar__right > a:hover{
+    transform: scale(1.05);
+    padding:3px 10px;
+    font-size: 16px;
+}
+}

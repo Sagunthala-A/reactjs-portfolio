@@ -7,7 +7,7 @@ const About = () => {
     <div className='about'>
       <div className='about__container'>
         <h1>Ms.Sagunthala</h1>
-        <p>An enthusiastic web developer waiting for opportunities to show the skill</p>
+        <p>"An enthusiastic frontend developer eagerly waiting to showcase my skills and broaden my knowledge."</p>
         <div className='about__buttons'>
           <a href="https://drive.google.com/drive/u/2/folders/1h5rP07gAEcUUu_vQ9htsbJRwEQnHplkx" target="_blank" rel="noopener noreferrer">
             <button className='about__downloadResumeBtn'>Download Resume</button>

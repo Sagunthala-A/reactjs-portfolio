@@ -8,21 +8,24 @@
 }
 
 .about__container{
+  width: 500px;
   position: absolute;
-  top: 250px;
-  right: 150px;
+  top: 390px;
+  right: 200px;
   background-color: transparent !important;
 }
 
 .about__container > h1{
   font-family: 'Great Vibes', cursive;
   font-size: 70px;
-  letter-spacing: 3px;
+  letter-spacing: 4px;
 }
 
 .about__container > p{
   font-family: 'Crimson Text', serif;
-  font-size: 25px;
+  font-size: 28px;
+  font-weight: 400;
+  letter-spacing: .4px;
   text-align: left;
   padding-left:23px;
   padding-top:20px;
@@ -71,4 +74,32 @@
   color: black;
   background-color: white;
   font-weight: 600;
+}
+
+@media screen and (max-width:1024px){
+  .about__container > h1{
+  letter-spacing: 2px;
+} 
+}
+
+@media screen and (max-width:768px){
+  .about__container{
+  top: 175px;
+  right:10px;
+}
+.about__container > h1{
+  font-size: 49px;
+  letter-spacing: 1px;
+}
+.about__downloadResumeBtn{
+  padding:10px 20px !important;
+}
+.about__container > p {
+  text-wrap: balance;
+  letter-spacing: 0;
+  font-size: 25px;
+}
+.about__container{
+  width: 400px;
+}
 }

@@ -64,3 +64,17 @@
     transform: scale(1.1);
     margin-top:20px ;
 }
+
+@media screen and (max-width:768px){
+
+.project img{
+    width: 350px;
+    height: 250px;
+    /* margin: 0;
+    padding: 0; */
+}
+.project {
+    margin-bottom: 30px;
+}
+
+}

@@ -15,3 +15,13 @@ a{
     text-decoration: none;
     color:white;
 }
+
+/* 
+media queries
+max-width - 1440px  -big screen pc ...no need to change 
+max-width - 1024 px -low screen pc 
+max width - 768px; - tablet
+max-width - 600px; -m obile
+
+*/
+

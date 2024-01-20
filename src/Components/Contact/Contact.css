@@ -1,12 +1,10 @@
 .contactContainer{
-    margin:200px auto 150px auto;
+    margin:200px 0;
     color:white;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    /* width:60vw; */
-    /* border:1.4px dotted white;  */
 }
 
 .contactContainer > h1 {
@@ -20,7 +18,7 @@
     justify-content: center;
     /* width:90%; */
     border:.2px dotted white;
-    padding:20px 100px;
+    padding:20px 50px;
     border-radius:20px;
 }
 
@@ -29,10 +27,9 @@
     align-items: center;
     justify-content: center;
     flex:.3;
-    margin-left:100px;
-    /* padding:50px 10px 20px 10px; */
-    box-shadow: 0 0 10px .1px rgb(255, 99, 71);
-    padding:30px;
+    margin-left:80px;
+    box-shadow: 0 0 10px .1px rgb(255, 99, 71,.7);;
+    padding:20px;
     border-radius: 50px;
     transition: transform 200ms ease-in;
 }
@@ -54,12 +51,12 @@
     flex-direction: column;
     justify-content: center;
     color:white;
-    box-shadow: 0 0 10px .1px rgb(255, 99, 71);
+    box-shadow: 0 0 10px .1px rgb(255, 99, 71,.7);;
     padding:20px;
     border-radius: 50px;
     transition: transform 200ms ease-in;
-    margin:40px 10px;
-    width:40%;
+    margin:40px 4px;
+    width:100%;
 }
 
 .contact__icons:hover,.contact__form:hover{
@@ -110,4 +107,41 @@ input::-webkit-inner-spin-button {
 .contact__form > textarea:focus::placeholder  {
   color: white;
   font-size: 16px;
+}
+
+
+@media screen and (max-width:1024px){
+    .contact__icons{
+        padding:15px;
+    }
+
+    .contact__form{
+        padding:30px;
+    }
+}
+
+@media screen and (max-width:768px){
+    .contactContainer{
+    margin:0 100px;
+}
+.contact{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.contact__form{
+    padding:30px 30px;
+    width:100%;
+}
+.contact__icons{
+    margin-left:0;
+    padding:20px;
+}
+.contact__icons > a > .MuiSvgIcon-root {
+    width: 80px;
+    height: 46px;
+}
+
+
+
 }

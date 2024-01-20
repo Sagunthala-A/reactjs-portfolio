@@ -6,7 +6,8 @@ import skill_img from '../../assets/jojo/skill.jpg'
 
 const Skills = () => {
   return (
-    <Element className='skillContainer' name='skills'>
+    <div className='skill__wrapper'>
+        <Element className='skillContainer' name='skills'>
         <div className='skillContainer__image'>
             <img src={skill_img} alt='skills image'/>
         </div>
@@ -75,6 +76,7 @@ const Skills = () => {
 
         </div>
     </Element>
+    </div>
   )
 }
 

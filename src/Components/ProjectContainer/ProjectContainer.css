@@ -5,6 +5,7 @@
     justify-content: center;
     margin: 200px 0;
     color:white;
+    /* padding:0 20px; */
 }
 
 .projectContainer > h1 {
@@ -13,13 +14,38 @@
   
 .projectContainer > p {
     padding-bottom: 20px;
+    font-size: 17px;
+    font-weight: 300;
 }
 
 .projectContainer__project {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    width: 60vw;
     margin-top: 50px;
     justify-content: center;
+    margin: 2% 15%;
   }
+
+@media screen and (max-width:1024px){
+    .projectContainer__project{
+        margin: 2% 8%;
+    }   
+
+    .projectContainer{
+        margin: 160px 70px;
+    }
+
+    .projectContainer > p {
+    text-align: center;
+    font-size: 16px;
+}
+.projectContainer__project {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 50px;
+    justify-content: center;
+    /* margin:10px 10px; */
+  }
+}
