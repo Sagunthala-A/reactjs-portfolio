@@ -72,3 +72,7 @@
 span > .css-5xe99f-MuiLinearProgress-bar1{
     background-color: blueviolet ;
 }
+
+.html > * {
+    background-color: crimson !important;
+}
