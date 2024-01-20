@@ -16,28 +16,40 @@ const Skills = () => {
             <div className='skillContainer__skillSet'>
                 <h5>Reactjs</h5>
                 <div className='skillContainer__slider1'>
-                    <LinearProgress variant='determinate' value={70}/>
+                    <LinearProgress 
+                        className='slider1'
+                        variant='determinate' 
+                        value={70}/>
                 </div>
             </div>
 
             <div className='skillContainer__skillSet'>
                 <h5>Redux</h5>
                 <div className='skillContainer__slider2'>
-                    <LinearProgress variant='determinate' value={70}/>
+                    <LinearProgress 
+                        className='slider2'
+                        variant='determinate' 
+                        value={70}/>
                 </div>
             </div>
 
             <div className='skillContainer__skillSet'>
                 <h5>Javascript</h5>
                 <div className='skillContainer__slider3'>
-                    <LinearProgress variant='determinate' value={70}/>
+                    <LinearProgress
+                        className='slider3'
+                        variant='determinate' 
+                        value={70}/>
                 </div>
             </div>
 
             <div className='skillContainer__skillSet'>
                 <h5>CSS</h5>
                 <div className='skillContainer__slider4'>
-                    <LinearProgress variant='determinate' value={70}/>
+                    <LinearProgress 
+                        className='slider4'
+                        variant='determinate' 
+                        value={70}/>
                 </div>
             </div>
 
@@ -45,7 +57,7 @@ const Skills = () => {
                 <h5>HTML</h5>
                 <div className='skillContainer__slider5'>
                     <LinearProgress 
-                        className='html'
+                        className='slider5'
                         variant='determinate' 
                         value={70}/>
                 </div>
@@ -54,14 +66,10 @@ const Skills = () => {
             <div className='skillContainer__skillSet'>
                 <h5>JAVA</h5>
                 <div className='skillContainer__slider6'>
-                    <LinearProgress sx={{
-                  backgroundColor: 'white',
-                  '& .MuiLinearProgress-bar': {
-                    backgroundColor: 'green'
-                  }
-                }}
-                variant="determinate"
-                value={10}/>
+                    <LinearProgress 
+                        className='slider6'
+                        variant="determinate"
+                        value={10}/>
                 </div>
             </div>
 
