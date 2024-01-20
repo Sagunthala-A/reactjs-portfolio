@@ -1,7 +1,7 @@
 import React,{useState} from 'react';
 import { Element } from 'react-scroll';
 import './Contact.css';
-import { AccessAlarm,GitHub,LinkedIn,Mail } from '@mui/icons-material';
+import { GitHub,LinkedIn,Mail } from '@mui/icons-material';
 import axios from 'axios';
 
 

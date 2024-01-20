@@ -31,7 +31,7 @@
     color: white;
     opacity: 0;
     transition: opacity 20ms ease-in;
-    padding:5px 20px;
+    padding:3px 20px;
 }
 
 .project:hover .project__content {
@@ -42,9 +42,25 @@
     /* font-size: 18px; */
     text-align: center;
     padding-bottom: 5px;
-  }
+}
   
-  .project__content > p {
+.project__content > p {
     font-size: 15px;
     text-align: center;
-  } 
+} 
+
+.project__icons{
+    display: flex;
+    align-items: center;
+    gap:20px;
+    color:white;
+}
+
+.project__icons > a:hover{
+    color:black;
+}
+
+.project__icons > a > .MuiSvgIcon-root{
+    transform: scale(1.1);
+    margin-top:20px ;
+}

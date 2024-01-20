@@ -1,6 +1,3 @@
-// import React,{useState} from 'react';
-import './Project.css';
-
 // const Project = ({image,link,desc,title}) => {
 
 
@@ -49,16 +46,15 @@ import './Project.css';
 
 // export default Project;
 
-
-
 import React, { useState } from 'react';
 import './Project.css';
+import { GitHub, TravelExplore } from '@mui/icons-material';
 
-const Project = ({ image, link, desc, title }) => {
+const Project = ({ image, link, desc, title, gitLink }) => {
   const [hovered, setHovered] = useState(false);
 
   return (
-    <a href={link} target='_blank' rel='noopener noreferrer'>
+    // <a href={link} target='_blank' rel='noopener noreferrer'>
       <div
         className={`project ${hovered ? 'hovered' : ''}`}
         onMouseEnter={() => setHovered(true)}
@@ -68,9 +64,17 @@ const Project = ({ image, link, desc, title }) => {
         <div className='project__content'>
           <h4>{title}</h4>
           <p>{desc}</p>
+          <div className='project__icons'>
+            <a href={link} target='_blank' rel='noopener noreferrer'>
+              <TravelExplore/>
+            </a>
+            <a href={gitLink} target='_blank' rel='noopener noreferrer'>
+              <GitHub/>
+           </a>
+          </div>
         </div>
       </div>
-    </a>
+    // </a>
   );
 };
 
