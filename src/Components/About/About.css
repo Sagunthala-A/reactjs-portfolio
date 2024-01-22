@@ -20,7 +20,8 @@
     margin-right: 10%; */
 
   position: absolute;
-top:45vh;
+/* top:40vh; */
+bottom: 15vh;
 right: 10%;
 
   /* top: 390px; */
@@ -107,7 +108,8 @@ right: 10%;
 }
 .about__container{
   max-width: 450px;
-  top:50vh;
+  /* top:45vh; */
+  bottom:10vh;
   right: 4%;
 
   margin-top: 0;
@@ -119,7 +121,7 @@ right: 10%;
   .about__container{
     
   /* width: 400px; */
-  top:55vh;
+  top:50vh;
   right: 2%;
   /* top: 175px;
   right:10px; */
@@ -139,3 +141,59 @@ right: 10%;
   font-size: 25px;
 }
 }
+
+@media screen and (max-width:600px){
+ .about__container{
+  /* top:40vh; */
+  bottom: 0vh;
+  max-width: 400px;
+  width: auto;
+  min-width: 300px;
+  text-align: left !important;
+}
+.about__container > h1{
+  font-size: 40px;
+  letter-spacing: 2px;
+  text-align: left;
+}
+.about__downloadResumeBtn{
+  padding:10px 5px !important;
+}
+.about__container > p {
+  text-align: left !important;
+  letter-spacing: 0;
+  font-size: 20px;
+  max-width: 340px;
+}
+.about__buttons > a > button{
+  padding:5px ;
+  margin-top:30px;
+  margin-left: 0px;
+  text-align: center;
+}
+.about__buttons{
+  display: flex;
+  align-items: center;
+}
+.about__container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.about__buttons{
+  display: flex;
+  align-items: center;
+  max-width: 250px;
+}
+.about__myWorkBtn{
+  padding:6px 20px !important;
+}
+
+.about__downloadResumeBtn{
+  padding: 7px 0 !important;
+  margin-right: 20px;
+  margin-left: 23px !important;
+  text-align: center;
+}
+}
+  

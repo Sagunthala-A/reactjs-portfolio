@@ -176,3 +176,21 @@ input::-webkit-inner-spin-button {
 }
 
 }
+
+@media screen and (max-width:600px){
+    .contactContainer{
+        width: 100%;
+        margin-bottom: 75px;
+    }
+
+    .contactContainer > h1 {
+        padding-bottom: 0px;
+    }
+
+    .contact{
+    padding: 0px;
+    border:none;
+    max-width: 100%;
+    min-width: 50%; 
+}
+}

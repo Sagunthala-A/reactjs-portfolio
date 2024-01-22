@@ -5,7 +5,6 @@
     justify-content: center;
     margin: 200px 0;
     color:white;
-    /* padding:0 20px; */
 }
 
 .projectContainer > h1 {
@@ -47,5 +46,16 @@
     margin-top: 50px;
     justify-content: center;
     /* margin:10px 10px; */
+  }
+}
+
+@media screen and (max-width:600px){
+    .projectContainer > p {
+    padding-bottom: 0px;
+    font-size: 15px;
+    font-weight: 100;
+}
+.projectContainer__project {
+    margin-top: 40px;
   }
 }
