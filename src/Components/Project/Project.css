@@ -27,15 +27,17 @@
     flex-direction: column;
     justify-content: center;
     align-items: center; 
-    background-color: #f64c08;
+    /* background-color: #f64c08; */
+    background-color: rgb(246, 76, 8,.9);
     color: white;
     opacity: 0;
-    transition: opacity 20ms ease-in;
+    transition: opacity 800ms ease-in;
     padding:3px 20px;
 }
 
 .project:hover .project__content {
     opacity: 1;
+    /* transform: scale(1.06); */
 }
 
 .project__content > h4 {

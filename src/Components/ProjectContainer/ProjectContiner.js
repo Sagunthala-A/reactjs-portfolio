@@ -4,6 +4,7 @@ import './ProjectContainer.css';
 import Project from '../Project/Project';
 import financeApp from '../../assets/Finance-tracker-app.png';
 import bookNavigatorApp from '../../assets/Book-Navigator-app.png';
+import comingSoon from '../../assets/coming-soon.jpg';
 import img2 from "../../assets/jojo/project11.png";
 import img3 from "../../assets/jojo/project12.png";
 import img4 from "../../assets/jojo/project13.png";
@@ -24,23 +25,30 @@ const ProjectConatiner = () => {
       {
         img: financeApp,
         title: "Finance Tracker App",
-        desc:"It is used to manage the expensive and income of a individual person.",
+        desc:"Track your income & expenses effortlessly. Take control of your finances today!  (This project is ongoing.)",
         link: "https://sagu-finance-tracker-app.vercel.app/",
         gitLink: "https://github.com/Sagunthala-A/Finance-Tracker-App"
       },
       {
-        img: financeApp,
-        title: "Finance Tracker App",
-        desc:"It is used to manage the expensive and income of a individual person.",
+        img: comingSoon,
+        title: "Coming Soon",
+        desc:"Project will be launch soon",
         link: "https://sagu-finance-tracker-app.vercel.app/",
-        gitLink: "https://github.com/Sagunthala-A/Finance-Tracker-App"
+        gitLink: "https://github.com/Sagunthala-A"
       },
       {
-        img: financeApp,
-        title: "Finance Tracker App",
-        desc:"It is used to manage the expensive and income of a individual person.",
+        img: comingSoon,
+        title: "Coming Soon",
+        desc:"Project will be launch soon",
         link: "https://sagu-finance-tracker-app.vercel.app/",
-        gitLink: "https://github.com/Sagunthala-A/Finance-Tracker-App"
+        gitLink: "https://github.com/Sagunthala-A"
+      },
+      {
+        img: comingSoon,
+        title: "Coming Soon",
+        desc:"Project will be launch soon",
+        link: "https://sagu-finance-tracker-app.vercel.app/",
+        gitLink: "https://github.com/Sagunthala-A"
       },
 
     ]
