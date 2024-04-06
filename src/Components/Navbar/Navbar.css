@@ -1,8 +1,8 @@
 .navbar{
     display:flex;
     align-items: center;
-    color:white;
-    background-color:black;
+    color:var(--white);
+    background-color:var(--black);
     position:sticky;
     top:0;
     z-index: 2000;
@@ -27,18 +27,19 @@
 }
 
 .navbar__left > h1 > span{
-    color:tomato ;
+    color:var(--themeColor) ;
 }
 
 .navbar__right > a > h4 {
+    color:var(--white);
     cursor: pointer;
     transition: transform 700ms ease-out;
 }
 
 .navbar__right > a:hover{
     transform: scale(1.07);
-    background-color: tomato;
-    color:white;
+    background-color: var(--themeColor);
+    color:var(--white);
     border-radius:5px;
     padding:5px 20px;
     font-size: 17px;
@@ -47,7 +48,7 @@
 }
 
 .navbar__right > a:last-child{
-    background-color: tomato ;
+    background-color: var(--themeColor) ;
     border-radius: 2px;
     padding:3px 10px;
     transition: none;
@@ -60,8 +61,8 @@
 }
 
 .navbar__right > a:last-child {
-    background-color: #f64c08;
-    color: white;
+    background-color: var(--hireBtnBgColor);
+    color: var(--white);
     padding: 5px 20px !important;
     border-radius: 4px;
     letter-spacing: 1px;
@@ -118,7 +119,7 @@ display: none !important;
 } 
     .toggle{
         position: absolute;
-        background-color: rgb(255, 99, 71,.7);
+        background-color:var(--toggleMenuBgColor);
         width:100%;
         height:70vh;
         top:100%;
@@ -132,7 +133,7 @@ display: none !important;
     .toggle > a > h4{
         margin:10% auto;
         padding:10px 0px;
-        color:white;
+        color:var(--white);
         text-align: center;
         font-size: 25px;
         font-weight: 600;
@@ -142,30 +143,42 @@ display: none !important;
 
 .toggle > a > h4:hover{
     transform: scale(1.09);
-    background-color: black;
-    color:white;
+    background-color: var(--black);
+    color:var(--white);
     border-radius:5px;
     letter-spacing: 0px;
     cursor:pointer;
 }
 
 .toggle > a:last-child > h4:hover {
-    color: black;
-    background-color: white;
-    color:#f64c08;
+    color: var(--black);
+    background-color: var(--white);
+    color:var(--hireBtnBgColor);
     font-weight: 600;
     font-size: 25px;
     letter-spacing: 2px;
 }
 
 .toggle > a:last-child > h4 {
-    background-color:black;
-    color: white;
+    background-color:var(--black);
+    color: var(--white);
     padding: 15px 0px !important;
     border-radius: 5px;
     letter-spacing: 1px;
     margin-top:20px;
     margin-bottom: 10px;
 }  
+}
 
+/* theme  */
+/*  */
+.theme{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.lightThemeIcon,.darkThemeIcon{
+    cursor: pointer;
 }

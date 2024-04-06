@@ -1,5 +1,5 @@
 .footerSection{
-    color:white;
+    color:var(--white);
     text-align: center;
     margin:100px;
     padding: 30px;
@@ -9,6 +9,7 @@
     /* name duration timing-function delay iteration-count direction  NDT DID*/
     animation: sizeChange 2000ms ease-in infinite alternate;
     transition: transform 2s ease-in;
+    
 }
 
 .footerSection > h4 {
@@ -36,7 +37,7 @@
         color:tomato;
     }
     80% {
-        color: white;  
+        color: var(--white);  
     }
 }
 

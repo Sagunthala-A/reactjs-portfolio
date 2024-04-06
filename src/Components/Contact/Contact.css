@@ -1,6 +1,6 @@
 .contactContainer{
     margin:200px 0;
-    color:white;
+    color:var(--white);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -8,7 +8,7 @@
 }
 
 .contactContainer > h1 {
-    color: white;
+    color: var(--white);
     padding-bottom: 20px;
 }
 
@@ -19,7 +19,7 @@
     width:75%;
     max-width: 80%;
     min-width: 70%;
-    border:.2px dotted white;
+    border:.2px dotted var(--white);
     padding:20px 30px;
     border-radius:20px;
 }
@@ -42,11 +42,12 @@
     width: 50px;
     height: 90px;
     transition: transform 200ms ease-in;
+    color:var(--white);
 }
 
 .contact__icons > a > .MuiSvgIcon-root:hover{
     transform: scale(1.1);
-    color: tomato;
+    color: var(--themeColor);
 }
 
 .contact__form{
@@ -54,7 +55,7 @@
     display:flex;
     flex-direction: column;
     justify-content: center;
-    color:rgb(255, 255, 255);
+    color:var(--white);
     box-shadow: 0 0 10px .1px rgb(255, 99, 71,.7);;
     padding:20px;
     border-radius: 50px;
@@ -76,14 +77,15 @@
     border-radius:5px;
     font-weight: 400;
     outline:none;
-    color:tomato;
-    background-color: rgb(255, 255, 255,1);
+    color:var(--themeColor);
+    background-color: var(--white);
+    /* background-color: var(--contactInputFieldBgColor); */
     width:100%
 }
 
 .contact__form > input:focus, textarea:focus{
-    color:white;
-    background-color: tomato;
+    color:var(--white);
+    background-color: var(--themeColor);
     letter-spacing: 1px;
 }
 
@@ -103,15 +105,15 @@ input::-webkit-inner-spin-button {
     margin-top: 15px;
     margin: 15px auto;
     margin-top: 25px;
-    background-color: tomato;
-    color:white;
+    background-color: var(--themeColor);
+    color:var(--white);
     font-size: 18px;
     font-weight: 400;
 }
 
 .contact__form > input:focus::placeholder , 
 .contact__form > textarea:focus::placeholder  {
-  color: white;
+  color: var(--white);
   font-size: 16px;
 }
 
@@ -138,7 +140,7 @@ input::-webkit-inner-spin-button {
 
     .contact{
     width:80%;
-    border:.2px dotted white;
+    border:.2px dotted var(--white);
     padding:20px 50px;
     border-radius:20px;
 }

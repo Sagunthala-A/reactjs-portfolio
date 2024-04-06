@@ -1,5 +1,42 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
+
+:root{
+    --themeColor:tomato;
+    --white:white;
+    --black:black;
+    --hireBtnBgColor: #f64c08;
+    --toggleMenuBgColor: rgb(255, 99, 71,.7);
+    --projectContainerBgColor:rgb(246, 76, 8,.9);
+    --contactInputFieldBgColor:white;
+    --aboutcontainerBoxShadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.5);
+    --aboutParaShadow:var(--themeColor);
+    --aboutParaColor:var(--white);
+    --skillsImageShadow:rgba(0, 0, 0, 0.72);
+}
+
+.lightMode{
+    /* --themeColor:green; */
+    /* color:black; */
+    background-color: white;
+    /* later change the above background color to white */
+    --white:black;
+    --black:white;
+    --hireBtnBgColor: #f64c08;
+    --toggleMenuBgColor: rgb(255, 99, 71,.7);
+    --projectContainerBgColor:rgb(246, 76, 8,.9);
+    /* --contactInputFieldBgColor:rgb(0, 0, 0); */
+    /* --aboutcontainerBoxShadow: inset 0 0 0 2000px rgba(0, 0, 0, 0); */
+    --aboutcontainerBoxShadow: none;
+    --aboutParaShadow:white;
+    --aboutParaColor:var(--hireBtnBgColor);
+    --skillsImageShadow:rgba(0, 0, 0,0.28);
+}
+
+.darkMode{
+    background-color: black;
+}
+
 *{
     margin:0;
     padding:0;
@@ -7,14 +44,12 @@
     font-family: 'Poppins', sans-serif;
 }
 
-body{
-    background-color: black;
-}
-
 a{
     text-decoration: none;
     color:white;
 }
+
+
 
 /* 
 media queries

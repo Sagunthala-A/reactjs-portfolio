@@ -1,5 +1,5 @@
 .project {
-    color: white;
+    color: var(--white);
     margin: 15px;
     position: relative;
     overflow: hidden; /* Hide overflowing content */
@@ -27,9 +27,9 @@
     flex-direction: column;
     justify-content: center;
     align-items: center; 
-    /* background-color: #f64c08; */
-    background-color: rgb(246, 76, 8,.9);
-    color: white;
+    /* background-color: red; */
+    background-color: var(--projectContainerBgColor);
+    color: var(--white);
     opacity: 0;
     transition: opacity 800ms ease-in;
     padding:3px 20px;
@@ -55,11 +55,11 @@
     display: flex;
     align-items: center;
     gap:20px;
-    color:white;
+    color:var(--white);
 }
 
 .project__icons > a:hover{
-    color:black;
+    color:var(--black);
 }
 
 .project__icons > a > .MuiSvgIcon-root{

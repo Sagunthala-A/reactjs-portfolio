@@ -1,19 +1,19 @@
-import React from 'react';
-import { Element } from 'react-scroll';
-import './ProjectContainer.css';
-import Project from '../Project/Project';
+import DataContext from "./DataContext";
+import { useEffect, useState } from "react";
 import financeApp from '../../assets/Finance-tracker-app.png';
 import bookNavigatorApp from '../../assets/Book-Navigator-app.png';
 import comingSoon from '../../assets/coming-soon.jpg';
-import img2 from "../../assets/jojo/project11.png";
-import img3 from "../../assets/jojo/project12.png";
-import img4 from "../../assets/jojo/project13.png";
-import img5 from "../../assets/jojo/project14.png";
-import img6 from "../../assets/jojo/project15.png";
+// import img2 from "../../assets/jojo/project11.png";
+// import img3 from "../../assets/jojo/project12.png";
+// import img4 from "../../assets/jojo/project13.png";
+// import img5 from "../../assets/jojo/project14.png";
+// import img6 from "../../assets/jojo/project15.png";
 
+const DataProvider = ({children})=>{
 
-const ProjectConatiner = () => {
-  const projectList = [
+    const [darkTheme,setDarkTheme] = useState(true);
+    const [toggleMenuBar,setToggleMenuBar] = useState(false);
+    const projectList = [
       {
         img: bookNavigatorApp,
         title: "Book Navigator App",
@@ -31,9 +31,9 @@ const ProjectConatiner = () => {
       },
       {
         img: comingSoon,
-        title: "Coming Soon",
-        desc:"Project will be launch soon",
-        link: "https://sagu-finance-tracker-app.vercel.app/",
+        title: "ToDo List App",
+        desc:"Organize your day and boost your productivity with the Todo List App. Create, manage, and track your tasks efficiently!",
+        link: "https://react-to-do-app-flame.vercel.app/",
         gitLink: "https://github.com/Sagunthala-A"
       },
       {
@@ -52,29 +52,19 @@ const ProjectConatiner = () => {
       },
 
     ]
-
-  return (
-    <Element name='projects' className='projectContainer'>
-        <h1>Projects</h1>
-        <p>Here are some of the projects and clone projects are done by me.By developing these projects I upgraded my skills</p>
-        <div className='projectContainer__project'>
-            {
-              projectList.map((project,index)=>{
-                return(
-                  <Project
-                    key={index}
-                    image = {project.img}
-                    title = {project.title}
-                    link = {project.link}
-                    desc = {project.desc}
-                    gitLink = {project.gitLink}
-                  />
-                )
-              })
-            }
-        </div>
-    </Element>
-  )
+    const [hovered, setHovered] = useState(false);
+    useEffect(() => {
+    // Update body background color when isDarkMode changes
+    document.body.style.backgroundColor = darkTheme ? 'black' : 'white';
+  }, [darkTheme]);
+    return <DataContext.Provider value={{
+        darkTheme,setDarkTheme,
+        toggleMenuBar,setToggleMenuBar,
+        projectList,
+        hovered, setHovered
+    }}>
+        {children}
+    </DataContext.Provider>
 }
 
-export default ProjectConatiner;
+export default DataProvider;

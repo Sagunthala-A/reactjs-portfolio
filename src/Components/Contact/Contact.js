@@ -4,6 +4,8 @@ import './Contact.css';
 import { GitHub,LinkedIn,Mail } from '@mui/icons-material';
 import axios from 'axios';
 
+import {toast } from 'react-toastify';
+
 
 const Contact = ()=> {
 
@@ -14,6 +16,7 @@ const Contact = ()=> {
     message:''
   })
   const handleMailSend = async(e)=>{
+    toast.success("User created successfully")
     e.preventDefault();
     const {name,email,number,message} = userDetails;
 
@@ -32,11 +35,12 @@ const Contact = ()=> {
     try{
       const response = await axios.post('https://api.emailjs.com/api/v1.0/email/send',data);
       alert(response.data);
+      toast.success("succes")
     }catch(err){
       alert(err.message)
       console.log(err)
+      toast.success(err.message)
     }
-
   }
 
   return (
