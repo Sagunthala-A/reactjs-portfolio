@@ -9,22 +9,23 @@ import Footer from './Components/Footer/Footer';
 import DataContext from './Components/Context/DataContext';
 // import HireMe from './Components/HireMe/HireMe';
 // import { Routes ,Route } from 'react-router';
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
  
 const App = () => {
   const {darkTheme} = useContext(DataContext)
   return (
     <div className={darkTheme ? "darkMode" : "lightMode"}>
-        <Navbar/>
-        <AboutContainer/>
-        <Skills/>
-        <ProjectContiner/>
-        <Contact/>
-        <Footer/>
+      <ToastContainer />
+      <Navbar />
+      <AboutContainer />
+      <Skills />
+      <ProjectContiner />
+      <Contact />
+      <Footer />
     </div>
-
-
-  )
+  );
 }
 
 export default App

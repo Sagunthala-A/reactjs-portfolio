@@ -66,6 +66,7 @@ const DataProvider = ({children})=>{
     // Update body background color when isDarkMode changes
     document.body.style.backgroundColor = darkTheme ? 'black' : 'white';
   }, [darkTheme]);
+  
     return <DataContext.Provider value={{
         darkTheme,setDarkTheme,
         toggleMenuBar,setToggleMenuBar,
