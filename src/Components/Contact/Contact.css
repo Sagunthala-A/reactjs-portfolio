@@ -80,7 +80,8 @@
     color:var(--themeColor);
     background-color: var(--white);
     /* background-color: var(--contactInputFieldBgColor); */
-    width:100%
+    width:100%;
+    cursor:pointer;
 }
 
 .contact__form > input:focus, textarea:focus{
@@ -109,6 +110,7 @@ input::-webkit-inner-spin-button {
     color:var(--white);
     font-size: 18px;
     font-weight: 400;
+    cursor: pointer;
 }
 
 .contact__form > input:focus::placeholder , 

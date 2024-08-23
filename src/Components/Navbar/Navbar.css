@@ -116,6 +116,7 @@ display: none !important;
     display:inline-block !important;
     margin-right:70px;
     transform: scale(1.4);
+    cursor: pointer;
 } 
     .toggle{
         position: absolute;
