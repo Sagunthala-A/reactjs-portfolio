@@ -42,61 +42,75 @@ const Contact = ()=> {
   }
 
   return (
-    <Element name='contact' className='contactContainer'>
-          <h1>Contact</h1>
-          <div className='contact'>
-            <form className='contact__form' onSubmit={handleMailSend}>
-              <label for='name'>Name</label>
-              <input 
-                type='text' 
-                id='name'
-                value = {userDetails.name}
-                placeholder="What's your name ? "
-                onChange = {(e)=>{setUserDetails({...userDetails,name: e.target.value})}}
-                required/>
+    <Element name="contact" className="contactContainer">
+      <h1>Contact</h1>
+      <div className="contact">
+        <form className="contact__form" onSubmit={handleMailSend}>
+          <label for="name">Name</label>
+          <input
+            type="text"
+            id="name"
+            value={userDetails.name}
+            placeholder="What's your name ? "
+            onChange={(e) => {
+              setUserDetails({ ...userDetails, name: e.target.value });
+            }}
+            required
+          />
 
-              <label for='email'>Email</label>
-              <input 
-                type='email' 
-                id='email'
-                value = {userDetails.email}
-                onChange = {(e)=>{setUserDetails({...userDetails,email: e.target.value})}}
-                placeholder="What's your web address ? "
-                required/>
+          <label for="email">Email</label>
+          <input
+            type="email"
+            id="email"
+            value={userDetails.email}
+            onChange={(e) => {
+              setUserDetails({ ...userDetails, email: e.target.value });
+            }}
+            placeholder="What's your web address ? "
+            required
+          />
 
-              <label for='mobile'>Mobile Number</label>
-              <input 
-                type='number'
-                value = {userDetails.number}
-                onChange = {(e)=>{setUserDetails({...userDetails,number: e.target.value})}}
-                placeholder="Whats your mobile number ?"
-                id='mobile'/>
+          <label for="mobile">Mobile Number</label>
+          <input
+            type="number"
+            value={userDetails.number}
+            onChange={(e) => {
+              setUserDetails({ ...userDetails, number: e.target.value });
+            }}
+            placeholder="Whats your mobile number ?"
+            id="mobile"
+          />
 
-              <label for='message'>Messege</label>
-              <textarea 
-                required
-                type='text' 
-                id='message'
-                value = {userDetails.message}
-                onChange = {(e)=>{setUserDetails({...userDetails,message: e.target.value})}}
-                cols='40'
-                rows='4'
-                placeholder="Awaiting for your message..."
-                />
-              <button type='submit'>Send</button>
-            </form>
+          <label for="message">Messege</label>
+          <textarea
+            required
+            type="text"
+            id="message"
+            value={userDetails.message}
+            onChange={(e) => {
+              setUserDetails({ ...userDetails, message: e.target.value });
+            }}
+            cols="40"
+            rows="4"
+            placeholder="Awaiting for your message..."
+          />
+          <button type="submit">Send</button>
+        </form>
 
-            <div className='contact__icons'>  
-              <a href='www.github.com' target='_blank'>
-                <GitHub/>
-              </a>
-              <a href='www.linkedin.com' target='_blank'>
-                <LinkedIn/>
-              </a>
-          </div>
+        <div className="contact__icons">
+          <a href="https://github.com/Sagunthala-A" target="_blank">
+            <GitHub />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/sagunthala-a-79755623b"
+            target="_blank"
+          >
+            <LinkedIn />
+          </a>
         </div>
+      </div>
     </Element>
-  )
+  );
 }
 
 export default Contact;
