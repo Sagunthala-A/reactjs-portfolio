@@ -3,9 +3,7 @@ import { Element } from 'react-scroll';
 import './Contact.css';
 import { GitHub,LinkedIn,Mail } from '@mui/icons-material';
 import axios from 'axios';
-
 import {toast } from 'react-toastify';
-
 
 const Contact = ()=> {
 

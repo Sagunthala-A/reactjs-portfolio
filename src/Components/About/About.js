@@ -15,7 +15,7 @@ const About = () => {
           {/* https://drive.google.com/file/d/1NFPGotthE_6q_pvoYQRsEgadq32Ah_N0/view */}
           <a
             // href="https://drive.google.com/drive/u/2/folders/1h5rP07gAEcUUu_vQ9htsbJRwEQnHplkx"
-            href="https://drive.google.com/file/d/1pdcNiN-oJ_Nu-1GiMPkfu05QYzFjqr6w/view"
+            href="https://drive.google.com/file/d/1MOnUhdQdILuI4qrIqaN_BqHpyG1PQswr/view?usp=sharing"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -32,4 +32,4 @@ const About = () => {
   );
 }
 
-export default About
+export default About;

@@ -15,7 +15,6 @@ webdevelopersnotes.com&body=The Tips and Tricks section is great
 &bcc=onemore@anotherdomain.com">Send me an email</a>
 
       </div>
-
     </Link>
   )
 }
