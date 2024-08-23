@@ -79,7 +79,6 @@
     outline:none;
     color:var(--themeColor);
     background-color: var(--white);
-    /* background-color: var(--contactInputFieldBgColor); */
     width:100%;
     cursor:pointer;
 }
